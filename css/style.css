@@ -8,15 +8,15 @@
   }
 
 *{
-    margin: 1;
-    padding: 1;
+    margin: 0;
+    padding: 0;
     border: 0;
 }
 
 main{
     background-color: #0A0909;
     width: 100%;
-    height: 11100px;
+    height: auto;
     
 }
 
@@ -43,7 +43,7 @@ header {
     height: auto;
 }
 #elements_1{
-    width: 95%;
+    width: 90%;
     height: auto;
     display: flex;
     justify-items: center;
@@ -83,6 +83,7 @@ a{
     padding: 10px 16px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     gap: 10px;
     border-radius: 3px;
     background: linear-gradient(90deg, #02A39D 2.47%, #852ADD 97.76%);
@@ -91,6 +92,77 @@ a{
     font-size: 16px;
     font-weight: 600;
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: #12082ab6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+  }
+  
+  .modal-content {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .modal.active {
+    right: 0;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links ul li {
+    color: #fff;
+    padding: 8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+  }
+  
+  .links ul li:hover {
+    color: #02A39D;
+    transition: ease-in 0.3s;
+  }
+  
+  .button_header {
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #02A39D 2.47%, #852ADD 97.76%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+  }
 
 section{
     padding-top: 320px;
@@ -143,6 +215,7 @@ section{
     background: #7727DA;
     font-size: 20px;
     color: #fff;
+    cursor:pointer;
     box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
@@ -170,9 +243,8 @@ section{
     position: absolute; 
     top: 0;
     left: 0;
-    margin-right: 6%;
     background: url(../img/image_1.webp) no-repeat center; 
-    background-size: cover; 
+    background-size: contain; 
     z-index: 1; 
 }
 
@@ -210,40 +282,293 @@ section{
 
 .element_1 , .element_2, .element_3, .element_4, .element_5, .element_6{
     width: 352px;
-    height: 216px;
+    height: 250px;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: flex-start; /* Alinha os itens ao início */
+    flex-direction: column; 
+    align-items: flex-start; 
     border-radius: 3px;
     border: 1.5px solid #02A39D;
     background: rgba(67, 67, 67, 0.50);
     backdrop-filter: blur(2.5px);
-    padding: 16px; /* Adiciona espaçamento interno */
-    gap: 8px; /* Espaço entre os elementos internos */
+    padding: 16px; 
+    gap: 8px; 
 }
 
 .title_1, .title_2, .title_3, .title_4, .title_5, .title_6{
     display: flex;
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
-    gap: 8px; /* Espaçamento entre a imagem e o texto */
+    align-items: center; 
+    gap: 8px; 
 }
 .title_text {
     font-weight: 600; 
     font-size: 18px; 
+    font-family: "Inter", sans-serif;
     padding-left: 20px;
     color: #ffffff; 
 }
 
 .description {
-    font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo */
-    color: #ffffff; /* Cor do texto */
-    line-height: 1.5; /* Melhora a legibilidade */
+    font-size: 16px; 
+    color: #ffffff; 
+    line-height: 1.5;
     font-weight: 500;
+    font-family: "Inter", sans-serif;
 }
 
 .img_funcionalidades img{
-    width: 90px; /* Ajuste conforme necessário */
+    width: 90px;
     height: auto;
     display: block;
     max-width: 90%;
+}
+
+#third{
+    width: 100%;
+    height: 650px;
+ /*    background-color: #7727DA;  */
+    display: flex;
+    gap: 8%;
+    padding-bottom: 5%;
+    justify-content: center; 
+    align-items: center;
+}
+
+.blur_2{
+    width: 380px;
+    height: 380px; 
+    flex-shrink: 0;
+    border-radius: 369px;
+    position: absolute;
+    background: linear-gradient(90deg, #2DFFF7 2.47%, #A446FF 97.76%);
+    filter: blur(150px); 
+    z-index: 0;
+}
+
+.img1{
+    width: 100%; 
+    height: 100%;  
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url(../img/Taskmaster_-removebg-preview\ 1.png) no-repeat center; 
+    background-size: contain; 
+    z-index: 1; 
+}
+
+#container-2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.style_2{
+    width: 35%;
+    height: 500px;
+    justify-content: end;
+}
+
+.style_2 h1{
+    font-size: 50px;
+    color: #fff;
+    margin: 10px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.style_2 h2{
+    font-size: 30px;
+    padding-top: 5px;
+    color: #fff;
+    margin: 10px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+.style_2 h4{
+    font-size: 24px;
+    padding-top: 5px;
+    color: #fff;
+    margin: 10px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+.footer {
+    background-color: #101010;
+    color: #bbb;
+    padding: 20px;
+    border-top: 2px solid #02A39D;
+    background: #0A0909;
+    text-align: center;
+  }
+  
+  .footer p{
+    font-size: 18px;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+
+  .small{
+    font-size: 16px;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+  }
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo-text {
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .links a {
+    margin: 0 10px;
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: #fff;
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+  }
+  @media only screen and (max-width: 768px) {
+    .links ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      width: 90px;
+      left: 0;
+      border-radius: 0 0 10px 10px;
+      padding: 20px 0;
+    }
+
+    #elements_1{
+        width: 90%;
+    }
+    
+
+    .links ul.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .button_header {
+      display: none;
+    }
+
+    .primary {
+        flex-direction: column; /* Muda o layout para coluna */
+        align-items: center;
+        width: 100%;
+        text-align: center; /* Centraliza o texto */
+      }
+    
+      .container_1 {
+        width: 60%;
+      }
+    
+      .container_1 h1 {
+        font-size: 32px; /* Ajusta o tamanho da fonte */
+      }
+    
+      .container_1 h2 {
+        font-size: 20px;
+      }
+    
+      .container_1 h4 {
+        font-size: 16px;
+      }
+    
+      .button_section {
+        padding: 8px 16px; /* Ajusta o botão */
+        font-size: 14px;
+      }
+
+      #container_2{
+       width: 50%;
+       display: flex;
+       align-items:center ;
+      }
+  }
+
+ 
+@media only screen and (max-width: 480px) {
+  .primary {
+    padding: 20px; /* Reduz o espaçamento em telas muito pequenas */
+  }
+
+  #container_2 .img {
+    height: 150px; /* Ajusta a altura da imagem para telas menores */
+  }
+
+  .container_1 h1 {
+    font-size: 24px;
+  }
+
+  .container_1 h2 {
+    font-size: 18px;
+  }
+
+  .container_1 h4 {
+    font-size: 12px;
+  }
 }

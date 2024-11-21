@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskMaster</title>
     <link rel="stylesheet" href="./css/style.css">
+   
     
 </head>
 <body>
@@ -20,10 +21,31 @@
                         </ul>
                </div>
                <button class="button_header">Gerenciar</button>
-
+               <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             </div>
         </header>
 
+        <div class="modal" id="menu-modal">
+            <div class="modal-content">
+              <span class="close-modal" id="close-modal">&times;</span>
+              <div class="img_logo">
+                <img src="./img/logo.webp" alt="Logo">
+              </div>
+              <nav class="links">
+                <ul>
+                  <a href="#"><li>INÍCIO</li></a>
+                  <a href="#"><li>FUNCIONALIDADES</li></a>
+                  <a href="#"><li>NOVIDADES</li></a>
+                </ul>
+              </nav>
+              <button class="button_header">Gerenciar</button>
+            </div>
+          </div>
+          
         <section class="primary">
             <div class="container_1">
              <div>
@@ -32,6 +54,7 @@
                 <h4>Desenvolvido com um único objetivo: ajudar você a organizar e gerenciar suas tarefas de forma simples e eficiente. Seja para projetos pessoais ou profissionais, nossa plataforma oferece as ferramentas certas para você priorizar o que importa, manter o foco e acompanhar o progresso de suas metas.</h4>
                 </div>
                 <button class="button_section" >Gerenciar</button>
+                
             </div>
 
             <div id="container_2">
@@ -60,14 +83,14 @@
                         <img class="img_funcionalidades" src="./img/element_2.png" alt="">
                         <p class="title_text">RECEBA NOTIFICAÇÕES</p>
                     </div>
-                    <p class="description">Criar múltiplas listas para diferentes contextos (ex.: 'Projetos', 'Compras', 'Viagem') facilita a organização de tarefas e compromissos. Cada lista pode ser adaptada ao seu objetivo específico, como manter um controle atualizado dos itens que precisa comprar etc.</p>
+                    <p class="description">Enviar notificações ou lembretes é uma estratégia eficaz para manter o acompanhamento de tarefas próximas do prazo ou já vencidas. Essas notificações servem como alertas para priorizar atividades, evitando atrasos e garantindo prazos.</p>
                 </div>
                 <div class="element_3">
                     <div class="title_3">
                         <img class="img_funcionalidades" src="./img/element_3.png" alt="">
                         <p class="title_text">REGISTRE SUBTAREFAS</p>
                     </div>
-                    <p class="description">Criar múltiplas listas para diferentes contextos (ex.: 'Projetos', 'Compras', 'Viagem') facilita a organização de tarefas e compromissos. Cada lista pode ser adaptada ao seu objetivo específico, como manter um controle atualizado dos itens que precisa comprar etc.</p>
+                    <p class="description">Registrar subtarefas é uma prática importante para dividir tarefas maiores em partes menores e mais gerenciáveis. Essa abordagem permite detalhar cada etapa necessária para concluir a atividade principal, tornando o processo mais organizado e eficiente.</p>
                 </div>
             </div>
             <div class="group_2">
@@ -76,7 +99,7 @@
                         <img class="img_funcionalidades"  src="./img/element_4.png" alt="">
                         <p class="title_text">CATEGORIA E ETIQUETAS</p>
                     </div>
-                    <p class="description">Criar múltiplas listas para diferentes contextos (ex.: 'Projetos', 'Compras', 'Viagem') facilita a organização de tarefas e compromissos. Cada lista pode ser adaptada ao seu objetivo específico, como manter um controle atualizado dos itens que precisa comprar etc.</p>
+                    <p class="description">Categorias agrupam itens de acordo com contextos amplos, como "Trabalho", "Estudo" ou "Pessoal", Já etiquetas são marcadores mais específicos e flexíveis, como "Urgente", "Reunião". Permitindo adicionar características detalhadas a cada item.</p>
                 </div> 
 
                 <div class="element_5">
@@ -84,18 +107,51 @@
                         <img class="img_funcionalidades"  src="./img/element_5.png" alt="">
                         <p class="title_text">NÍVEIS DE PRIORIDADE</p>
                     </div>
-                    <p class="description">Criar múltiplas listas para diferentes contextos (ex.: 'Projetos', 'Compras', 'Viagem') facilita a organização de tarefas e compromissos. Cada lista pode ser adaptada ao seu objetivo específico, como manter um controle atualizado dos itens que precisa comprar etc.</p>
+                    <p class="description">Os níveis de prioridade são uma maneira eficaz de organizar tarefas com base em sua urgência e importância. Divididos em categorias, como: Baixo nível, Médio nível e Alto nível.</p>
                 </div>
                 <div class="element_6">
                     <div class="title_6">
                         <img class="img_funcionalidades" src="./img/element_6.png" alt="">
                         <p class="title_text">HISTÓRICO DE TAREFAS</p>
                     </div>
-                    <p class="description">Criar múltiplas listas para diferentes contextos (ex.: 'Projetos', 'Compras', 'Viagem') facilita a organização de tarefas e compromissos. Cada lista pode ser adaptada ao seu objetivo específico, como manter um controle atualizado dos itens que precisa comprar etc.</p>
+                    <p class="description">o histórico pode ser útil para relembrar informações importantes, documentar processos e fornecer insights para melhorar a produtividade. Facilita o aprendizado com experiências e gestão de tarefas mais eficiente e estratégica.</p>
                 </div>
             </div>
             
         </section>
+
+        <section id="third">
+           <div id="container-2">
+            <div class="img1"></div>
+            <div class="blur_2"></div>
+           </div>
+           <div class="style_2">
+            <h1>Em breve...</h1>
+            <h4>Vem muito mais por aí... Em breve, o TaskMaster estará disponível como aplicativo, permitindo que você personalize sua experiência, crie um perfil e adapte suas listas conforme suas necessidades, adicionando prazos, prioridades e muito mais. Explore listas especiais para diferentes contextos, organize-se com tópicos relevantes e gerencie seu tempo de forma eficiente. Escolha entre os planos disponíveis e aproveite recursos exclusivos que se ajustam ao seu estilo de vida, tornando seu dia a dia mais prático e produtivo.</h4>
+        </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="logo-text">
+                <div class="logo">
+                  <img src="./img/logo.webp" alt="TaskMaster logo">
+                </div>
+                <p>Ajude os usuários a organizar suas tarefas e a concluir suas responsabilidades com eficiência.</p>
+                <small>TaskMaster. Da ideia à realização: faça acontecer.</small>
+              </div>
+              <div class="social-icons">
+                <a href="#"><img src="./img/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./img/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./img/ph_twitter-logo-fill.png" alt="Twitter"></a>
+                <a href="#"><img src="./img/ion_logo-github.png" alt="GitHub"></a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <small>© 2024 TaskMaster Inc. All rights reserved.</small>
+            </div>
+          </footer>
     </main>
+    <script src="./javascript/header.js"></script>
 </body>
 </html>
