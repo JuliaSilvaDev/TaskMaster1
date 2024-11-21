@@ -223,7 +223,6 @@ section{
 #container_2{
     width: 35%;
     height: 300px;
-    background-color: #02A39D;
     display: flex;
     flex-direction: column; /* Alinha o texto verticalmente */
     justify-content: center;
