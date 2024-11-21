@@ -93,41 +93,7 @@ a{
     font-weight: 600;
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100%;
-    background: #12082a;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
-    transition: right 0.3s ease-in-out;
-    z-index: 2000;
-  }
-  
-  .modal-content {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .modal.active {
-    right: 0;
-  }
-  
-  .close-modal {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #fff;
-  }
+
   
   .links ul {
     list-style-type: none;
