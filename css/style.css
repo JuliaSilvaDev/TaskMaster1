@@ -22,7 +22,7 @@ main{
 
 header {
     width: 90%;
-    height: 80px;
+    height: 60px;
     display: flex;
     border-radius: 61px;
     margin-top: 24px;
@@ -39,7 +39,7 @@ header {
 
 .img_logo img{
     margin-top: 5px;
-    width: auto;
+    width: 60px;
     height: auto;
 }
 #elements_1{
@@ -506,10 +506,7 @@ section{
       padding: 20px 0;
     }
 
-    .header{
-        background-color: #02A39D;
-        height: 50px;
-    }
+  
     #elements_1{
         width: 90%;
     }
@@ -560,7 +557,9 @@ section{
       .button_section {
         width: 120px;
         height: 40px;
+        font-weight: 600;
         padding: 8px 16px;
+        font-family: "Inter", sans-serif;
         font-size: 14px;
       }
 
@@ -574,6 +573,10 @@ section{
   }
   
   @media only screen and (max-width: 484px){
+    .header{
+        background-color: #02A39D;
+        height: 40px;
+    }
     #container_2 {
         width: 100%; /* Ajusta a largura para ocupar o espaço disponível */
         margin-left: 0; /* Remove o deslocamento */
@@ -598,7 +601,10 @@ section{
       }
     
       .container_1 h4 {
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        color: fff;
+        font-family: "Inter", sans-serif;
       }
     }
   
