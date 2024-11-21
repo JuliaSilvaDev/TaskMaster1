@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #0A0909;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+header {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    border-radius: 61px;
+    margin-top: 24px;
+    border: 1.5px solid #02A39D;
+    justify-content: center;
+    align-items: center;
+    background: #12082ab6;
+    backdrop-filter: blur(2.5px);
+    position: fixed;
+    left: 49%; 
+    transform: translateX(-50%); 
+    z-index: 1000; 
+}
+
+.img_logo img {
+    margin-top: 5px;
+    width: 60px;
+    height: auto;
+}
+
+#elements_1{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul li {
+    color: #fff; 
+    padding: 8px 26px; 
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.links ul li :hover {
+    color: #02A39D; 
+    transition:ease-in 1s;
+}
+
+a{
+ text-decoration: none;
+}
+
+.button_header {
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #02A39D 2.47%, #852ADD 97.76%);
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.task-details{
+    width: 40%;
+    height: auto;
+    margin-top: 320px;
+    padding-bottom: 10%;
+}
+
+.task-details h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.task-info {
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #fff;
+}
+
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0 ;
+    font-size: 16px;
+    background: linear-gradient(90deg, #02A39D 0%, #852ADD 100%);
+    color: #fff;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 8px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#subtask-list {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#subtask-list li {
+    background-color: #1A1A1A;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #ff4c4c;
+    margin-top: 20px;
+}
+
+.delete-button:hover {
+    background-color: #e04343;
+}
+
+.troca{
+    padding-top: 260px;
+}

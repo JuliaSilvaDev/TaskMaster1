@@ -42,7 +42,7 @@ function addTask(taskText) {
     arrow.classList.add('arrow');
     arrow.innerHTML = '&#8594;'; // HTML code for the right arrow
     arrow.addEventListener('click', () => {
-        window.location.href = 'outra_tela.html'; // Redireciona para a outra tela
+        window.location.href = 'gerenciamento_tarefas.html'; // Redireciona para a outra tela
     });
 
     // Adiciona todos os elementos ao item de tarefa
@@ -53,3 +53,4 @@ function addTask(taskText) {
     // Adiciona o item de tarefa à lista de tarefas
     taskList.appendChild(taskItem);
 }
+

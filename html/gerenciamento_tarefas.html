@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="../css/style_gerenciamento.css">
+</head>
+<body>
+    <main>
+
+        <header>
+            <div id="elements_1">
+                <div class="img_logo"><a href="../index.html"><img src="../img/logo.webp" alt=""></a></div>
+               <div class="links">
+                    <ul>
+                        <a href="../index.html"><li>INÍCIO</li></a>
+                        <a href="../index.html"><li>FUNCIONALIDADES</li></a>
+                        <a href="../index.html"><li>NOVIDADES</li></a>
+                        </ul>
+               </div>
+               <a href="./html/lista_tarefas.html">
+                <button class="button_header">Gerenciar</button>
+            </a>
+            
+            </div>
+        </header>
+        <div class="troca">
+            <a href="../html/lista_tarefas.html"><button>Voltar</button></a>
+        </div>
+        
+        <section class="task-details">
+            <h2>Detalhes da Tarefa</h2>
+            <div class="task-info">
+                <label for="task-date">Definir Data:</label>
+                <input type="date" id="task-date">
+            </div>
+            <div class="task-info">
+                <label for="subtasks">Adicionar Sub-Tarefa:</label>
+                <input type="text" id="subtask-input" placeholder="Digite uma sub-tarefa">
+                <button id="add-subtask">Adicionar</button>
+            </div>
+            <ul id="subtask-list"></ul>
+            <div class="task-info">
+                <label for="details">Adicionar Detalhes:</label>
+                <textarea id="details" rows="4" placeholder="Digite os detalhes"></textarea>
+            </div>
+            <div class="task-info">
+                <label for="note">Adicionar Nota:</label>
+                <textarea id="note" rows="3" placeholder="Digite uma nota"></textarea>
+            </div>
+            <button id="delete-task" class="delete-button">Excluir Lista de Tarefas</button>
+        </section>
+    </main>
+    <script src="../javascript/gerenciamento.js"></script>
+</body>
+</html>
